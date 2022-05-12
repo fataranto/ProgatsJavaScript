@@ -45,7 +45,7 @@
                     donación</a>
             </strong>. ¡Muchas
             gracias!</p>
-        <p id="mensaje-adopcion">Actualmente hay <span id="gatosAdopcion">6</span> gato/s por adoptar!</p>
+        <p id="mensaje-adopcion">Actualmente hay <span id="num-gatos">6</span> gato/s por adoptar!</p>
     </footer>
     <div id="swipeUp">
         <a href="#top"><img src="./img/paw.png" alt="swipe up arrow"></a>
@@ -57,21 +57,29 @@
 
         // 2. Completa el código para cambiar el título h1 por "SuperProGats"
 
+        document.querySelector("h1").textContent = "SuperProGats";
+
         // document.querySelector("h1")
 
         // 3. Completa el código para mostrar por consola el contenido del segundo h3. Por la consola debe aparecer "Verónica"
+
+        console.log(document.querySelector(".card__veronica h3").textContent);
 
         // console.log(document.querySelector(""));
 
         // 4. Completa el código para mostrar por consola el valor del atributo "href" del enlace del footer. Debería aparecer "https://www.progatslagarriga.com"
 
+        console.log(document.querySelector(".footer--link").href);
+
         // 5. Completa el código para cambiar el logo del gato por el logo ubicado en img/logo-2.jfif
 
-        // document.querySelector("");
+         document.querySelector(".header--logo").src = "./img/logo-2.jfif";
 
         // 6. Investiga como cambiar el color de fondo del body a través de la propiedad  backGroundColor. Investiga cómo cambiar el color de fondo al valor de la variable "nuevoColor".
 
         let nuevoColor = "aliceblue";
+
+        document.querySelector("body").style.backgroundColor = nuevoColor;
 
         // 7. La variable 'window' es una variable global que almacena información relevante sobre el navegador. Investiga como conocer el tamaño actual del viewport, horintal y vertical. https://www.w3schools.com/js/js_window.asp 
         // Muestra el viewport actual con el formato anchoxalto. Ejemplo: 1280x780 (estos números dependerán de tu viewport, claro)
