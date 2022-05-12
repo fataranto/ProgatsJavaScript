@@ -51,31 +51,6 @@
         <a href="#top"><img src="./img/paw.png" alt="swipe up arrow"></a>
     </div>
     <script>
-        // Debemos obtener el valor del nodo HTML identificado con id=num-gatos
-
-        let numGatos = document.querySelector("#num-gatos").textContent;
-
-        // transformo el string en un númer
-        numGatos = +numGatos; // es lo mismo que numGatos = parseInt(numGatos)
-
-        console.log("Ey! Que me estoy ejecutando!");
-        console.log("El número gatos por adoptar es: ", numGatos);
-
-        if (numGatos == 0) {
-            document.querySelector("#mensaje-adopcion").style.backgroundColor = "lightblue";
-        }
-
-        //sino si // 6>=1? si, pero 6<=5 es falso!
-        else if (numGatos >= 1 && numGatos <= 5) {
-            document.querySelector("#mensaje-adopcion").style.backgroundColor = "yellow";
-        }
-
-        // en cualquier otro caso (más de 5 gatos por adoptar)
-        else {
-            document.querySelector("#mensaje-adopcion").style.backgroundColor = "red";
-        }
-    </script>
-    <script>
         // 1. Completa el código para que por consola se muestre el contenido textual del nodo h1
 
         console.log(document.querySelector("h1").textContent);
